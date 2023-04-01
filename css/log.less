@@ -4,6 +4,11 @@
     list-style: none;
 }
 
+html {
+    font-size: 16px;
+    color: rgba(0, 0, 0, 1);
+}
+
 main {
     margin-top: 1.875rem;
 }
@@ -33,7 +38,26 @@ h3 {
     
     th,
     td {
+        line-height: 1.25rem;
         padding: .3125rem .625rem;
         border: .0625rem solid #000;
+    }
+
+    tr>td:nth-child(1),
+    tr>td:nth-child(3) {
+        text-align: center;
+    }
+
+    tr>td:nth-child(2) {
+        text-align: left;
+    }
+
+    p {
+        line-height: 1.25rem;
+        margin-bottom: .5rem;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
 }

@@ -3,6 +3,10 @@
   padding: 0;
   list-style: none;
 }
+html {
+  font-size: 16px;
+  color: #000000;
+}
 main {
   margin-top: 1.875rem;
 }
@@ -28,6 +32,21 @@ h3 {
 }
 #log th,
 #log td {
+  line-height: 1.25rem;
   padding: 0.3125rem 0.625rem;
   border: 0.0625rem solid #000;
+}
+#log tr > td:nth-child(1),
+#log tr > td:nth-child(3) {
+  text-align: center;
+}
+#log tr > td:nth-child(2) {
+  text-align: left;
+}
+#log p {
+  line-height: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+#log p:last-child {
+  margin-bottom: 0;
 }
